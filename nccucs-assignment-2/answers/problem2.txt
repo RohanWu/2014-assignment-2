@@ -1,0 +1,68 @@
+
+Problem 2: Write a Specification for Graph
+———————————————————————————————————————————
+
+根據Problem 1列出的建構圖形必要的功能條件：
+
+
+1. 這是一個「有向的」、「node-weighted（節點權重）」圖形，而我們預設這同時也是個開放性的圖形資料結構，即使用者可以在地圖中增加新的街道（節點）
+> static node CreateNode( Name name, Cost c )
+
+Requires: name != NULL 且 c != NULL
+
+Modifies: —
+
+Throws: 不合法的街道（節點名稱name重複或權重數c<0）
+
+Effects: 成功，新增一個街道; 否則，新增街道失敗（回傳錯誤）
+
+Returns: 一個合法的街道
+
+
+2. 承1.，使用者根據新增的街道來重新繪製地圖（原有的節點新增子節點，構成新的圖形）
+> static void AddNode( Set n, Graph g )
+
+Requires: n != NULL
+
+Modifies: g
+
+Throws: 街道關係失序（節點之間的連結錯誤，例如：節點n1至節點n2有兩條以上的指向邊）
+
+Effects: 原地圖新增一個街道
+
+Returns: 成功，新地圖（g’）; 否則，維持原地圖（g’）
+
+Remark: 如果尚未建構地圖（g=NULL），則先新增街道（n）為初始地圖
+
+
+3. 給定旅程的起始點（starts）和旅程的目的地（goals），在地圖上找出這兩地之間的最短路徑，記錄下經過的街道和總距離（拜訪過的節點和總花費權重）
+> static node-weighted-shortest-path( Set starts, Set goals )
+
+Requires: starts != NULL 且 goals != NULL
+
+Modifies: —
+
+Throws: 兩地間找不到路徑（這兩節點間無連接邊）
+
+Effects: 找到兩地間的行程，計算出總距離
+
+Returns: 成功，回傳依序經過的街道和總距離; 否則，計算行程失敗（回傳錯誤）
+
+———————————————————————————————————————————
+
+＃Will the graph be mutable or immutable?
+預設這是個開放性的圖形資料結構，使用者可以自行在地圖中增加新的街道（節點），因此這個圖形是可變動的。
+
+＃Will the graph be implemented as a single class, or will there be a separate Java interface for the Graph specification, and a class for the implementation?
+
+
+＃Will edges be objects in their own right? Will they be visible to a client of the abstract type?
+使用者關心的是從起始點（starts）到達目的地（goals），如何才能達到最短路徑（假設最短路徑是最有效率），在這個策略下街道間的交集（edges邊）顯得不是那麼直觀考量。
+
+＃What kind of iterators will the type provide?
+
+＃Will the type provide any views, like the set view returned by the entrySet() method of java.util.Map?
+
+＃Will the type implement any standard Java collection interfaces?
+
+＃Will the type use any standard Java collections in its implementation?

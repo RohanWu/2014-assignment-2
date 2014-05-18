@@ -1,4 +1,4 @@
-package ps3.test;
+package nccucs-assignment-2.test;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

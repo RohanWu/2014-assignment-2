@@ -1,4 +1,4 @@
-package ps3.graph;
+package nccucs-assignment-2.graph;
 
 /**
  * A WeightedNode class is a simple record type which contains a name

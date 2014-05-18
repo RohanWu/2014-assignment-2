@@ -1,0 +1,23 @@
+
+Problem 3: Write Tests for Graph
+—————————————————————————————————
+
+Black-box test:
+
+1. static node CreateNode( Name name, Cost c )
+	( BakerStreet, 5 ) => 節點n1{(name = BakerStreet),(c = 5)}
+	( TaipaiStreet, 0) => throw Missing（預設條件：拜訪過每個節點都有花費的代價）
+	( DajiaStreet, -1) => throw Missing
+
+2. static void AddNode( Graph g, Set n )
+	( A, n1 ) => 新圖形g1
+	( A, n2 ) => 新圖形g12
+	( A, NULL ) => 維持圖形g
+
+3. static node-weighted-shortest-path( Set starts, Set goals )
+	( n1, n3 ) => 最短路徑{n1,n2,n3}，花費6
+	( n1, n1 ) => 最短路徑{n1}，花費1
+	( n2, n1 ) => 無最短路徑（n2無有向邊指向n1，回傳錯誤）
+
+
+

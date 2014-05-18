@@ -1,4 +1,4 @@
-package ps3.test;
+package nccucs-assignment-2.test;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,4 +1,4 @@
-package ps3.graph;
+package nccucs-assignment-2.graph;
 
 import java.util.*;
 
