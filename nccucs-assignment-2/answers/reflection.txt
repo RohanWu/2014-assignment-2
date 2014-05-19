@@ -1,0 +1,28 @@
+
+Reflection
+———————————
+
+a. How many hours did you spend on each problem of this problem set? (Only include time when you are completely focused on CSE 331. For example, if you worked an hour in your noisy dorm lounge, or you were periodically reading email or IMs, don't count that hour.)
+
+作業繳交期限為5/19, 14:00，我在5/12第一次接觸題目的敘述文件，分隔數天一個章節一個章節閱讀，試著先把各段英文敘述轉成直觀更容易思考的中文思路，總計閱讀完題幹為3hr。
+先撰寫問題集1~3等實作前的規格敘述（specification），總計撰寫完畢約2hr。
+
+*解讀已提供的預設檔案（Javadoc）預計花費1~2hr。
+*開始設計撰寫Java code，預計花費2~4hr。
+*撰寫Junit測試並偵錯，預計花費1~3hr。
+
+
+b. In retrospect, what could you have done better to reduce the time you spent solving this problem set?
+
+1. 增進英文閱讀能力，讓語言與程式設計邏輯思考無隔閡
+2. 學習撰寫規格說明（specification），實作前的周詳思考有助於實作時的進行效率
+3. 熟稔Java等物件導向程式設計（Object-oriented programming），在實作時能即時靈活運用 
+4. 習慣JUnit測試方法「讓程式測試程式」
+
+
+d. What do you know now that you wish you had known before beginning the problem set?
+
+1. 廣泛閱讀Javadocs
+2. JUnit的進階測試
+3. 實際練習如何撰寫規格說明
+上述的經驗可能套用在日後的專案設計情境

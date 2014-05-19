@@ -1,4 +1,4 @@
-package nccucs-assignment-2.test;
+package ps3.test;
 
 import junit.framework.*;
 
